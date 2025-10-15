@@ -1,16 +1,10 @@
 # Node.js dependencies
 node_modules/
 
-# SASS files
+# SASS cache
 SASS/
 *.scss
-
-# SASS cache
 .sass-cache/
-
-# Compiled CSS
-
-css/*.css.map
 
 # Logs
 *.log
@@ -26,11 +20,9 @@ Thumbs.db
 node_modules/
 
 # SASS cache
+SASS/
+*.scss
 .sass-cache/
-
-# Compiled CSS
-css/*.css
-css/*.css.map
 
 # Logs
 *.log

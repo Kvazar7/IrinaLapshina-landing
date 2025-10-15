@@ -1,11 +1,15 @@
 # Node.js dependencies
 node_modules/
 
+# SASS files
+SASS/
+*.scss
+
 # SASS cache
 .sass-cache/
 
 # Compiled CSS
-css/*.css
+
 css/*.css.map
 
 # Logs

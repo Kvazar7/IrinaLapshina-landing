@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Короткий опис сайту"> <!-- SEO -->
+    <meta name="keywords" content="ключові, слова, сайту"> <!-- SEO -->
+    <meta name="author" content="Serhii Lapshyn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Irina Lapshina landing</title>
+    
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      
+    <nav class="header__nav">
+      <!-- Logo -->
+      <a href="./index.html" class="header__logo">
+        <span class="header__logoName">
+          Ірина
+        </span>
+        Лапшина
+      </a>
+      <!-- SiteNav -->
+      <ul class="header__sitenav-menu">
+        <li>
+        <a href="./index.html" class="header__sitenav">
+          Домашня
+        </a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="header__sitenav header__currentpage">
+            Портфоліо
+          </a>
+        </li>
+        <li>
+          <a href="./contacts.html" class="header__sitenav">
+            Контакти
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="header__mobile-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width=30px height=30px>
+          <use href="./Images/icons/symbol-defs.svg#icon-menutoopen"></use>
+        </svg>
+      </button>
+    </nav>
+    </div>
+    <!-- mob modal window -->
+      <div class="header__mobmodal js-menu-container visually-hidden" id="mobile-menu">
+        <ul class="header__mobmodal-sitenav-menu">
+          <li>
+            <a href="./index.html" class="header__mobmodal-sitenav">
+              Домашня
+            </a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="header__mobmodal-sitenav header__mobmodal-currentpage">
+              Портфоліо
+            </a>
+          </li>
+          <li>
+            <a href="./contacts.html" class="header__mobmodal-sitenav">
+              Контакти
+            </a>
+          </li>
+        </ul>
+       
+        <button type="button" class="header__mobmodal-close-button js-close-menu">
+          <svg width=30px height=30px>
+            <use href="./Images/icons/symbol-defs.svg#icon-menutoclose"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <section class="portfolio-preview">
+      <div class="portfolio-preview__container">
+        <h2 class="portfolio-preview__text">
+          Тут ви можете ознайомитися з моїм портфоліо
+        </h2>
+          <button type="button" class="herosection__button" data-modal-open>
+            Обрати фотосесію
+          </button>
+      </div>
+
+    <div class="portfolio-category" onclick="location.href='gallery-newborn.html'">
+      <h2 class="portfolio-title">Новонароджені немовлята 5-45 днів</h2>
+        <p>
+          Опис фотосесії. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis quod cumque id a libero voluptates optio eaque quae doloremque? Enim aspernatur exercitationem, eum nobis et odit minima in quisquam error mollitia incidunt nam, cumque atque? Ipsum, distinctio voluptatum accusantium a tempora est voluptas eveniet adipisci possimus doloribus, ea fuga?
+        </p>
+      <ul class="portfolio-slider slider-newborn.html">
+        <li>
+          <img src="./Images/новонароджені/IMG_0024,1.jpg" alt="Малючок у клітчатій кепці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0090,1.jpg" alt="Новонароджений в коконі в образі білої мишки" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0097,1.jpg" alt="Новонародженний тримає пухнастого зайчика" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0101,1.jpg" alt="Новонароджений тримає пухнастого зайчика крупний план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0187,1.jpg" alt="Новонароджений малючок мило спить у образі зеленого гномика" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0194,1.jpg" alt="Новонароджений у синьому бодіку і шапочці спить на місяці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0239,1.jpg" alt="Новонароджений склав долоньки на подушку-місяці і дрімає" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0251.1.jpg" alt="Новонароджений в образі дракончика мило спить" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0259.1.jpg" alt="Новонароджений в образі дракончика другий план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0271.1.jpg" alt="Новонароджений в образі дракончика крупний план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0291.1.jpg" alt="Новонароджена дівчинка спить у кроватці під фіолетовими квітами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0304.1.jpg" alt="Новонароджена дівчинка у віночку спить у кроватці під фіолетовими квітами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0314.1.jpg" alt="Новонароджена дівчинка у віночку спить у кроватці під фіолетовими квітами план згори" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0320.1.jpg" alt="Новонароджена дівчинка у короні дрімає коло вази квітів" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0326.1.jpg" alt="Новонароджена дівчинка у віночку з вушками котика" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0335,1.jpg" alt="Новонароджена дитинка у креслі біля гарбузів" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0345.1.jpg" alt="Новонароджена дівчинка у віночку з вушками котика крупний план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0352.1.jpg" alt="Новонароджена дитинка з жовтими лимонами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0355,1.jpg" alt="Новонароджена дівчинка у віночку з квітів" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0359.1.jpg" alt="Новонароджений у жовтому бодіку" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0360,1.jpg" alt="Новонароджена принцеса у кошику з квітами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0368.1.jpg" alt="Новонароджена дитинка у жовтому бодіку з лимонами вид згори" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0380.1.jpg" alt="Новонароджена у жовтому бодіку та жофтій повязці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0389.1.jpg" alt="Новонароджена дитинка у жовтому бодіку з ягідним віночком на голові та ведмедиком у долоньках" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0410.1.jpg" alt="Новонароджена дитинка у жовтому бодіку з ягідним віночком на голові та ведмедиком у долоньках крупний план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0418.1.jpg" alt="Новонароджена дитинка у жовтому бодіку та повязці з квіткою на голові" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0442,1.jpg" alt="Новонароджена принцеса у рожевих кольорах" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0453.1.jpg" alt="Новонароджений малючок у синьому бодіку на блакитному фоні" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0465,1.jpg" alt="Новонароджена дівчінка у рожевому стилі" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0510.1.jpg" alt="Новонароджена дитинка на руках у батька" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0512,1.jpg" alt="Новонароджена дівчинка з рожевим котиком" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0524,1.jpg" alt="Новонароджений у образі ведмедика з бджолами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0531,1.jpg" alt="Новонародженна дівчинка у рожевому платтячку і квітковому віночку" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0536.1.jpg" alt="Новонароджений малюк мило закусив губку" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0548.1.jpg" alt="Новонароджений малюк лежить на бочку" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0560.1.jpg" alt="Новонароджений малюк У сердечку з квітами" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0565.1.jpg" alt="Новонароджений малюк у серці з квітами другий план" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0577.1.jpg" alt="Новонароджений малюк у серці з квітами і котиком в руці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0588.1.jpg" alt="Новонароджений малюк у серці з квітами разом з лялькою" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0683,1.jpg" alt="Новонароджена дівчинка у білій кроватці з орхідеями" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0701,1.jpg" alt="Новонароджена дівчинка на рожевій подушці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0706,1.jpg" alt="Новонароджена принцеса у білій кроватці з орхідеями і рожевим зайцем поруч" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0718,1.jpg" alt="Новонароджена принцеса важно спить на рожевій подушці" />
+        </li>
+        <li>
+          <img src="./Images/новонароджені/IMG_0756,1.jpg" alt="Новонароджена дівчинка у квітковому вінку з котячими вушками та рожевим котиком" />
+        </li>
+      </ul>
+      <p class="portfolio-description">
+        Теплі родинні моменти та очікування дива у ніжній атмосфері.
+      </p>
+    </div>
+
+    <div class="portfolio-category" onclick="location.href='gallery-babies.html'">
+      <h2 class="portfolio-title">Малюки від 3 до 6 місяців</h2>
+        <p>
+          Опис фотосесії. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis quod cumque id a libero voluptates optio eaque quae doloremque? Enim aspernatur exercitationem, eum nobis et odit minima in quisquam error mollitia incidunt nam, cumque atque? Ipsum, distinctio voluptatum accusantium a tempora est voluptas eveniet adipisci possimus doloribus, ea fuga?
+        </p>
+      <ul class="portfolio-slider slider-babies.html">
+        <li>
+          <img src="./Images/дітки 3-6 міс/IMG_0459,1.jpg" alt="Малюк з гарбузами дивиться на нас" />
+        </li>
+        <li>
+          <img src="./Images/дітки 3-6 міс/IMG_0553,1.jpg" alt="малючок-зайчик посміхається у капусті" />
+        </li>
+        <li>
+          <img src="./Images/дітки 3-6 міс/IMG_8576.1.jpg" alt="Дівчинка у білому платті мило посміхається" />
+        </li>
+        <li>
+          <img src="./Images/дітки 3-6 міс/IMG_8683.1.jpg" alt="Дівчинка з рожевими трояндами на блакитному фоні" />
+        </li>
+      </ul>
+      <p class="portfolio-description">
+        Теплі родинні моменти та очікування дива у ніжній атмосфері.
+      </p>
+    </div>
+
+    <div class="portfolio-category" onclick="location.href='gallery-kids.html'">
+      <h2 class="portfolio-title">Дітки від 7 до 15 місяців</h2>
+        <p>
+          Опис фотосесії. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis quod cumque id a libero voluptates optio eaque quae doloremque? Enim aspernatur exercitationem, eum nobis et odit minima in quisquam error mollitia incidunt nam, cumque atque? Ipsum, distinctio voluptatum accusantium a tempora est voluptas eveniet adipisci possimus doloribus, ea fuga?
+        </p>
+      <ul class="portfolio-slider slider-kids.html">
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3248,1.jpg" alt="Дитина приймає ванну з молока" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3277,1.jpg" alt="Дитина приймає ванну з молока другий план" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3319,1.jpg" alt="Дитина приймає ванну з молока і показує язика у камеру" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_5017,1.jpg" alt="Дівчинка у фіолетовому з кульками та іграшковим роялем" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_7460,1.jpg" alt="Дівчинка у рожевому платтячку на фоні повітряних кульок" />
+        </li>
+      </ul>
+      <p class="portfolio-description">
+        Теплі родинні моменти та очікування дива у ніжній атмосфері.
+      </p>
+    </div>
+
+    <div class="portfolio-category" onclick="location.href='gallery-family.html'">
+      <h2 class="portfolio-title">Сімейні фотоф та вагітності</h2>
+        <p>
+          Опис фотосесії. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis quod cumque id a libero voluptates optio eaque quae doloremque? Enim aspernatur exercitationem, eum nobis et odit minima in quisquam error mollitia incidunt nam, cumque atque? Ipsum, distinctio voluptatum accusantium a tempora est voluptas eveniet adipisci possimus doloribus, ea fuga?
+        </p>
+      <ul class="portfolio-slider slider-family">
+        <li>
+          <img src="./Images/вагітність/111,1.jpg" alt="Вагітна дівчина у розкішному рожевому платті" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9792,1.jpg" alt="Щаслива вагітна дівчина тримає животик" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9833,1.jpg" alt="Вагітна дівчина на фоні великих квітів" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9841,1.jpg" alt="Вагітна дівчина у ніжному платті" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9924,1.jpg" alt="Вагітна дівчина біля вікна" /> 
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9935,1.jpg" alt="Вагітна дівчина у квітковому вінку" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9954,1.jpg" alt="Вагітна дівчина з золотою аурою" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/IMG_9977,1.jpg" alt="Вагітна дівчина на високому стільці" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/Verity cloud 3,1.jpg" alt="Вагітна красуня у квітковій рамці" />
+        </li>
+        <li>
+          <img src="./Images/вагітність/Кільце квіткове,1.jpg" alt="Вагітна дівчина у квітковому вінку" />
+        </li>
+      </ul>
+      <p class="portfolio-description">
+      Теплі родинні моменти та очікування дива у ніжній атмосфері.
+      </p>
+    </div>
+  
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__column">
+        <a  href="./index.html" 
+            class="footer__logo">
+          <span class="footer__logoweb">
+            Ірина
+          </span>
+          <span class="footer__logostudio">
+            Лапшина
+          </span>
+        </a>
+      </div>
+
+      <div class="footer__column">
+        <address class="footer__contacts-list">
+          <ul>
+            <li class="footer__list">
+              <p>Адреса:</p>
+              <a href="https://maps.app.goo.gl/3m1iw8eWstchGoL47" target="_blank" rel="noopener noreferrer nofollow" class="footer__adress">
+                м. Полтава, <br/>вул. Перспективна, 10, кв. 5
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380963884708" class="header__contacts footer__phone">
+                <svg width="20" height="20">
+                  <use href="./Images/icons/iconsvgsprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 388 47 08
+              </a>
+            </li>
+            <li class="footer__messengers">
+              <a href="#" class="footer__contacts">
+                <svg width="20" height="20">
+                  <use href="./Images/icons/iconsvgsprite.svg#icon-telegram"></use>
+                </svg>
+                Telegram
+              </a>
+              <a href="#" class="footer__contacts">
+                <svg width="20" height="20">
+                  <use href="./Images/icons/iconsvgsprite.svg#icon-whatsapp"></use>
+                </svg>
+                WhatsApp
+              </a>
+              <a href="#" class="footer__contacts">
+                <svg width="20" height="20">
+                  <use href="./Images/icons/iconsvgsprite.svg#icon-viber"></use>
+                </svg>
+                Viber
+              </a>
+          </li>
+          </ul>
+        </address>
+        </div>
+        
+        <div class="footer__column footer__join">
+          <p class="footer__join-in">Я у соціальних мережах</p>
+            <ul class="footer__socials-links">
+              <li>
+                <a href="https://www.instagram.com/newbornphoto_irina_lapshina?igsh=aHFoZWNsbDF1NGVq">
+                  <svg width="20" height="20">
+                    <use href="./Images/icons/iconsvgsprite.svg#icon-instagram"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lapshina.photo">
+                  <svg width="20" height="20">
+                    <use href="./Images/icons/iconsvgsprite.svg#icon-facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+            </ul>
+        </div>
+ 
+    </div>
+  </footer>
+
+  </main>
+
+  <script src="JS/mobilemenu.js" defer></script>
+  <script src="JS/portfolioslider.js" defer></script>
+
+</body>
+</html>

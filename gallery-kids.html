@@ -21,101 +21,53 @@
     <div class="container header__container">
       
     <nav class="header__nav">
-      <!-- Logo -->
       <a href="./index.html" class="header__logo">
         <span class="header__logoName">
           Ірина
         </span>
         Лапшина
       </a>
-      <!-- SiteNav -->
-      <ul class="header__sitenav-menu">
-        <li>
-        <a href="./index.html" class="header__sitenav header__currentpage">
-          Домашня
-        </a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="header__sitenav">
-            Портфоліо
-          </a>
-        </li>
-        <li>
-          <a href="./contacts.html" class="header__sitenav">
-            Контакти
-          </a>
-        </li>
-      </ul>
-      <button type="button" class="header__mobile-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width=30px height=30px>
-          <use href="./Images/icons/symbol-defs.svg#icon-menutoopen"></use>
-        </svg>
-      </button>
+      <a href="./portfolio.html" class="header__sitenav header__currentpage">
+        повернутись до Портфоліо
+      </a>
     </nav>
-    </div>
-      <!-- mob modal window -->
-      <div class="header__mobmodal js-menu-container visually-hidden" id="mobile-menu">
-        <ul class="header__mobmodal-sitenav-menu">
-          <li>
-            <a href="./index.html" class="header__mobmodal-sitenav header__mobmodal-currentpage">
-              Домашня
-            </a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="header__mobmodal-sitenav">
-              Портфоліо
-            </a>
-          </li>
-          <li>
-            <a href="./contacts.html" class="header__mobmodal-sitenav">
-              Контакти
-            </a>
-          </li>
-        </ul>
-       
-        <button type="button" class="header__mobmodal-close-button js-close-menu">
-          <svg width=30px height=30px>
-            <use href="./Images/icons/symbol-defs.svg#icon-menutoclose"></use>
-          </svg>
-        </button>
-      </div>
     </div>
   </header>
 
   <main>
-    <section class="herosection">
-      <div class="herosection__text-container">
-        <h1 class="herosection__text">
-          Ірина Лапшина
-        </h1>
-          <h2 class="herosection__subtitle">
-            Професійний фотограф у Полтаві
-          </h2>
-          <p class="herosection__description">
-            Я професійний фотограф у Полтаві, спеціалізуюсь на зйомці новонароджених, дітей та сімейних фотосесій. Моя мета - створити для вас незабутні моменти, які ви будете цінувати все життя.
-          </p>
-          <button type="button" class="herosection__button" data-modal-open>
-            Обрати фотосесію
-          </button>
+    <section class="gallery">
+      <div class="gallery__container">
+        <h2 class="gallery-title">Дітки від 7 до 15 місяців</h2>
+          <p class="gallery-description">
+            Теплі родинні моменти та очікування дива у ніжній атмосфері.
+          </p>          
+      <ul class="gallery-slider">
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3248,1.jpg" alt="Дитина приймає ванну з молока" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3277,1.jpg" alt="Дитина приймає ванну з молока другий план" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_3319,1.jpg" alt="Дитина приймає ванну з молока і показує язика у камеру" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_5017,1.jpg" alt="Дівчинка у фіолетовому з кульками та іграшковим роялем" />
+        </li>
+        <li>
+          <img src="./Images/дітки 7-15 міс/IMG_7460,1.jpg" alt="Дівчинка у рожевому платтячку на фоні повітряних кульок" />
+        </li>
+      </ul>
       </div>
-      <div class="herosection__images-container">
-        <ul>
-          <li class="active">
-            <img src="/Images/IrinaLapshina/IrinaLapshina1.jpg" alt="Фотограф Ірина Лапшина власне фото 1" loading="lazy">
-              <div class="caption visually-hidden">Фотограф Ірина Лапшина власне фото</div>
-          </li>
-          <li>
-            <img src="/Images/IrinaLapshina/IrinaLapshina2.jpg" alt="Фотограф Ірина Лапшина власне фото 2" loading="lazy">
-              <div class="caption visually-hidden">Фотограф Ірина Лапшина власне фото</div>
-          </li>
-          <li>
-            <img src="/Images/IrinaLapshina/IrinaLapshina3.jpg" alt="Фотограф Ірина Лапшина власне фото 3" loading="lazy">
-              <div class="caption visually-hidden">Фотограф Ірина Лапшина власне фото</div>
-          </li>
-        </ul>
-      </div>
-        
+      <!-- Modal full-screen viewer -->
+        <div class="lightbox hidden">
+          <span class="lightbox-close">&times;</span>
+          <img class="lightbox-image" src="" alt="" />
+          <button class="lightbox-prev">&#10094;</button>
+          <button class="lightbox-next">&#10095;</button>
+        </div>
     </section>
+    
 
     <footer class="footer">
     <div class="container footer__container">
@@ -134,7 +86,7 @@
       <div class="footer__column">
         <address class="footer__contacts-list">
           <ul>
-            <li class="footer__adress">
+            <li class="footer__list">
               <p>Адреса:</p>
               <a href="https://maps.app.goo.gl/3m1iw8eWstchGoL47" target="_blank" rel="noopener noreferrer nofollow" class="footer__adress">
                 м. Полтава, <br/>вул. Перспективна, 10, кв. 5
@@ -199,7 +151,6 @@
 
   </main>
 
-  <script src="JS/slider.js" defer></script>
-  <script src="JS/mobilemenu.js" defer></script>
+  <script src="./JS/galleryslider.js"></script>
 </body>
 </html>

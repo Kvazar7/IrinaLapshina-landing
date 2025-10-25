@@ -1,0 +1,184 @@
+@use '../utils/variables' as*;
+@use '../utils/mixins' as*;
+
+.footer {
+  background: $gradient-primary;
+  color: $primary-color;
+  box-shadow: $footer-shadow;
+  padding: 2rem 1rem;
+
+  &__logo,
+  &__contacts,
+  &__adress,
+  &__socials-links a {
+    text-shadow: $text-shadow;
+    color: $primary-color;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__column {
+    width: 100%;
+  }
+
+  &__socials-links a:hover,
+  &__adress:hover,
+  &__contacts:hover {
+    color: $hover-color;
+  }
+
+  &__phone {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  @include mobile {
+    text-align: center;
+    
+    &__logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+    
+    &__contacts-list a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+    }
+    &__adress {
+      display: none;
+    }
+    &__messengers {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    &__join-in {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    &__socials-links {
+      li {
+        margin-bottom: 0.5rem;
+      }
+      a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: $primary-color;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      justify-content: center;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 3rem 1rem;
+    text-align: left;
+
+    &__container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    &__column {
+      flex: 1 1 30%;
+      min-width: 250px;
+    }
+    &__logo {
+      font-size: 1.8rem;
+    }
+    &__adress {
+      margin-bottom: 1.5rem
+    }
+    &__contacts-list a,
+    &__socials-links a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: flex-start;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    &__messengers {
+      display: flex;
+      flex-direction: row;
+      gap: 1.2rem;
+      justify-content: flex-start;
+      margin-top: 1rem;
+    
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: left;
+      }
+    }
+    
+    &__join-in {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include desktop {
+    padding: 3.5rem 2rem;
+    
+    &__logo {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+    &__contacts-list ul {
+      gap: 0.7rem;
+    }
+    &__adress,
+    &__phone,
+    &__contacts {
+      font-size: 1.2rem;
+      margin-bottom: 0.7rem;
+    }
+    &__phone svg,
+    &__messengers svg,
+    &__socials-links svg {
+      width: 26px;
+      height: 26px;
+      margin-right: 0.7rem;
+    }
+    &__messengers {
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+    
+      a,
+      &__socials-links a {
+        font-size: 1.2rem;
+        gap: 0.7rem;
+      }
+    }
+    &__socials-links li {
+      margin-bottom: 0.7rem;
+    }
+    &__join-in {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}

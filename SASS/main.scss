@@ -1,0 +1,13 @@
+@use './utils/mixins';
+@use './utils/variables';
+
+@use './base/reset';
+@use './base/base';
+
+@use './components/header';
+@use './components/footer';
+
+@use './screens/home';
+@use './screens/portfolio';
+@use './screens/gallery';
+@use './screens/contacts';

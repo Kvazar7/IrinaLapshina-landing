@@ -1,27 +1,10 @@
 # Node.js dependencies
 node_modules/
 
-# SASS cache
-SASS/
-*.scss
-.sass-cache/
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE specific files
-.vscode/
-.idea/
-*.swp# Node.js dependencies
-node_modules/
+# Old CSS folder to ignore
+CSS old/
 
 # SASS cache
-SASS/
-*.scss
 .sass-cache/
 
 # Logs

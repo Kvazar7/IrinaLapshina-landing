@@ -1,4 +1,33 @@
+@use '../utils/variables' as*;
 @use '../utils/mixins' as*;
+
+body {
+  padding-bottom: 50px;
+}
+
+main {
+  // min-height: calc(100vh - 73px - 50px);
+  display: flex;
+  flex-direction: column;
+}
+
+@include mobile {
+  body {
+    padding-bottom: 30px;
+  }
+  main {
+    min-height: calc(100vh - 73px - 30px);
+  }
+}
+
+@include tablet {
+  body {
+    padding-bottom: 40px;
+  }
+  main {
+    min-height: calc(100vh - 73px - 40px);
+  }
+}
 
 .visually-hidden {
   @include visually-hidden;
